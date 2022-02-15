@@ -6,6 +6,7 @@
   z-index: 1;
   -webkit-border-top-left-radius: 90px;
   -webkit-border-top-right-radius: 90px;
+  filter: drop-shadow(12px 12px 16px rgb(23, 52, 89));
 }
 .media {
   display: inline;
