@@ -1,0 +1,19 @@
+h3 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  display: inline;
+  font-size: 70px;
+  font-weight: 120;
+  font-family: 'Cairo', sans-serif;
+  text-transform: capitalize;
+}
+#text {
+  position: absolute;
+  top: 48%;
+  left: 15%;
+  display: inline;
+  font-size: 45px;
+  font-weight: 120;
+  font-family: 'Cairo', sans-serif;
+}

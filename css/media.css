@@ -1,0 +1,26 @@
+.social {
+  min-width: 93%;
+  position: absolute;
+  top: 94.2%;
+  background-color: #fff;
+  z-index: 1;
+  -webkit-border-top-left-radius: 90px;
+  -webkit-border-top-right-radius: 90px;
+}
+.media {
+  display: inline;
+  position: static;
+  margin-left: 315px;
+}
+.fb {
+  width: 10%;
+  fill:none !important;stroke:#3b5998;stroke-linecap:round;stroke-linejoin:round;stroke-width:1;
+}
+.twt {
+  width: 10%;
+  fill:none !important;stroke:#00acee;stroke-linecap:round;stroke-linejoin:round;stroke-width:1;
+}
+.ghb {
+  width: 10%;
+  fill:none !important;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1;
+}

@@ -1,0 +1,115 @@
+::-webkit-media-controls {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: -webkit-flex;
+    -webkit-align-items: flex-start;
+    -webkit-justify-content: flex-end;
+    -webkit-flex-direction: column;
+}
+audio {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  text-align: center;
+  font-size: 60%;
+}
+
+audio::-webkit-media-controls-panel {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-user-select: none;
+    background-color: #ffc0cb;
+}
+
+audio::-webkit-media-controls-mute-button {
+    -webkit-appearance: media-mute-button;
+    display: -webkit-flex;
+}
+
+audio::-webkit-media-controls-overlay-play-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-play-button {
+    -webkit-appearance: media-play-button;
+    display: -webkit-flex;
+}
+
+audio::-webkit-media-controls-timeline-container {
+    -webkit-appearance: media-controls-background;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
+    -webkit-flex: 1 1;
+    -webkit-user-select: none;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-timeline, video::-webkit-media-controls-timeline {
+    -webkit-appearance: media-slider;
+    display: -webkit-flex;
+    -webkit-flex: 1 1;
+}
+
+audio::-webkit-media-controls-volume-slider {
+}
+
+audio::-webkit-media-controls-seek-back-button {
+    -webkit-appearance: media-seek-back-button;
+    display: -webkit-flex;
+}
+
+audio::-webkit-media-controls-seek-forward-button {
+    -webkit-appearance: media-seek-forward-button;
+    display: -webkit-flex;
+}
+
+audio::-webkit-media-controls-fullscreen-button {
+    -webkit-appearance: media-enter-fullscreen-button;
+    display: -webkit-flex;
+}
+
+audio::-webkit-media-controls-rewind-button {
+}
+
+audio::-webkit-media-controls-return-to-realtime-button {
+}
+
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    -webkit-appearance: media-toggle-closed-captions-button;
+    display: -webkit-flex;
+}
+
+audio::-webkit-media-controls-closed-captions-container {
+    display: none;
+}
+
+audio::-webkit-media-controls-closed-captions-track-list {
+    display: none;
+}
+
+audio::-webkit-media-controls-volume-slider-mute-button {
+    -webkit-appearance: media-volume-slider-mute-button;
+}
+
+audio::-webkit-media-controls-fullscreen-volume-slider {
+    display: none;
+}
+
+audio::-webkit-media-controls-fullscreen-volume-min-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-fullscreen-volume-max-button {
+    display: none;
+}
