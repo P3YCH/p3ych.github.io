@@ -167,3 +167,4 @@ window.onload = function() {
     startRain();
   }, 100);
 }
+/* Cara Memanggil Ya Mengunakan Canvas ( <body><canvas id="canvas"></canvas> ) */
