@@ -1,3 +1,4 @@
+/* Cara Memanggil Ya Mengunakan Canvas ( <body><canvas id="canvas"></canvas> ) */
 var maxParticles = 200,
 numParticles = 0,
 particles = [],
