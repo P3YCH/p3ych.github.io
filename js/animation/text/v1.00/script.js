@@ -107,6 +107,7 @@ Letter.prototype.render = function( char ) {
     this.char = char;
   }
 };
+var word = [ ," Website You Vuln" ];
 var nextWord = 1;
 var letters = new Letters();
 setTimeout( function() {
