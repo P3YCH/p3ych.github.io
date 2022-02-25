@@ -107,3 +107,14 @@ Letter.prototype.render = function( char ) {
     this.char = char;
   }
 };
+var nextWord = 1;
+      var letters = new Letters();
+      setTimeout( function() {
+        letters.start( word[ nextWord ] );
+        setInterval(function() {
+          nextWord++;
+          if ( nextWord >= word.length )
+          nextWord = 0;
+          letters.start( word[ nextWord ] );
+        }, 17777);
+      }, 1000);
