@@ -51,9 +51,6 @@ class TextScramble {
     return this.chars[Math.floor(Math.random() * this.chars.length)]
   }
 }
-const phrases = [
-  'text ya disini',
-  ]
   const el = document.querySelector('.text')
   const fx = new TextScramble(el)
   let counter = 0
