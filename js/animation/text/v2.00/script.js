@@ -1,6 +1,7 @@
 class TextScramble {
   constructor(el) {
     this.el = el
+    this.chars = '1234567890@#$_&-+()/*:;!?'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -43,20 +44,23 @@ class TextScramble {
       this.resolve()
     } else {
       this.frameRequest = requestAnimationFrame(this.update)
-      this.frame ++
+      this.frame++
     }
   }
   randomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)]
   }
 }
-const el = document.querySelector('.text')
-const fx = new TextScramble(el)
-let counter = 0
-const next = () => {
-  fx.setText(phrases[counter]).then(() => {
+const phrases = [
+  'text ya disini',
+  ]
+  const el = document.querySelector('.text')
+  const fx = new TextScramble(el)
+  let counter = 0
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
       setTimeout(next, 800)
-  })
-counter = (counter + 1) % phrases.length
-}
+    })
+    counter = (counter + 1) % phrases.length
+  }
 next()
