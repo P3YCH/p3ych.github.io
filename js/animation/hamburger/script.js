@@ -1,1 +1,1 @@
-document.querySelector('.first-button').addEventListener('click', function () {
+document.querySelector('.first-button').addEventListener('click', function () {});
