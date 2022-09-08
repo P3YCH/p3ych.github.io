@@ -1,2 +1,2 @@
-document.querySelector('.animated-icon1').classList.toggle('open');
+document.querySelector('.animation-hamburger-2').classList.toggle('open');
 });
