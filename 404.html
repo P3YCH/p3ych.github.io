@@ -6,78 +6,20 @@
     <title>404</title>
     <link rel="icon" type="image/x-icon" href="//p3ych.github.io/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://p3ych.github.io/css/text-animation/style.css" type="text/css" media="all" />
     <style type="text/css" media="all">
       @import url('https://fonts.googleapis.com/css2?family=Combo');
       body {
         user-select: none;
         font-family: 'Combo', cursive;
       }
-      .text-4 {
-        font-size: 5rem !important;
-        animation: glitch 1s linear infinite;
-      }
-      @keyframes glitch {
-        2%,64% {
-          transform: translate(2px,0) skew(0deg);
-        }
-        4%,60% {
-          transform: translate(-2px,0) skew(0deg);
-        }
-        62% {
-          transform: translate(0,0) skew(5deg);
-        }
-      }
-      .text-4:before, .text-4:after{
-        content: attr(title);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
-
-.text-4:before{
-  animation: glitchTop 1s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-}
-
-@keyframes glitchTop{
-  2%,64%{
-    transform: translate(2px,-2px);
-  }
-  4%,60%{
-    transform: translate(-1px,1px);
-  }
-  62%{
-    transform: translate(13px,-1px) skew(-13deg); 
-  }
-}
-
-.text-4:after{
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-}
-
-@keyframes glitchBotom{
-  2%,64%{
-    transform: translate(-2px,0);
-  }
-  4%,60%{
-    transform: translate(-2px,0);
-  }
-  62%{
-    transform: translate(-22px,5px) skew(21deg); 
-  }
-}
     </style>
   </head>
   <body class="bg-dark text-light">
     <div class="position-absolute top-50 start-50 translate-middle text-center">
       <span class="text-4 fs-1" title="404">404</span>
-      <span class="position-absolute top-55start-55 translate-middle badge rounded-pill bg-secondary">+<span id="33321"></span><span class="visually-hidden">unread messages</span></span>
-      <p class="text-danger">Sorry, you entered the wrong link, <span>please try again</span>.</p>
+      <span class="position-absolute top-55 start-55 translate-middle badge rounded-pill bg-secondary">+<span id="33321"></span></span>
+      <p class="text-danger">Sorry, you entered the wrong link, <span onclick="window.history.back()">please try again.</span></p>
     </div>
     <script type="text/javascript" charset="utf-8">
       function cb(response) {
@@ -85,8 +27,8 @@
       }
     </script>
     <script async src="https://api.countapi.xyz/hit/p3ych.github.io/visits?callback=cb"></script>
-    <script src="https://p3ych.github.io/js/copying.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/copying.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
   </body>
+</html>
 </html>
