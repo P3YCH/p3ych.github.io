@@ -23,7 +23,7 @@
     </div>
     <script type="text/javascript" charset="utf-8">
       function updateCounter() {
-        fetch('https://api.countapi.xyz/get/404/p3ychcount/?amount=1')
+        fetch('https://api.countapi.xyz/update/404/p3ychcount/?amount=1')
         .then(res => res.json())
         .then(data => counterElement.innerHTML = data.value)
       }
