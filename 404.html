@@ -22,11 +22,16 @@
       <p class="text-danger">Sorry, you entered the wrong link, <span onclick="window.history.back()">please try again.</span></p>
     </div>
     <script type="text/javascript" charset="utf-8">
-      function cb(response) {
-        document.getElementById('33321').innerText = response.value;
+      function updateCounter() {
+        fetch('https://api.countapi.xyz/get/404/p3ychcount/?amount=1')
+        .then(res => res.json())
+        .then(data => counterElement.innerHTML = data.value)
       }
+      
+      updateCounter()
+      
+      counterElement = document.getElementsByClassName('33321')[0];
     </script>
-    <script async src="https://api.countapi.xyz/hit/p3ych.github.io/visits?callback=cb"></script>
     <script src="/js/copying.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
