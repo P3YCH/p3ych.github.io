@@ -1,0 +1,12 @@
+[
+    {
+      "title"    : "Google",
+      "tags"     : "google, search",
+      "url"      : "https://www.google.com/"
+    },
+    {
+      "title"    : "Bing",
+      "tags"     : "bing, search",
+      "url"      : "https://www.bing.com/"
+    }
+  ]
